@@ -1,0 +1,120 @@
+:root {
+    /* Standard-Thema (Hell) */
+    --background-color-primary: #ffffff;
+    --background-color-secondary: #dedede;
+    --text-color: #000000;
+    --primary-color: #007bff;
+    --primary-hover-color: #0056b3;
+    --secondary-color: #6c757d;
+    --secondary-hover-color: #5a6268;
+}
+
+[data-theme="dark"] {
+    /* Dunkles Thema */
+    --background-color-primary: #333333;
+    --background-color-secondary: #000000;
+    --text-color: #ffffff;
+    --primary-color: #17a2b8;
+    --primary-hover-color: #117a8b;
+    --secondary-color: #6c757d;
+    --secondary-hover-color: #5a6268;
+}
+
+[data-theme="colorful"] {
+    /* Farbiges Thema */
+    --background-color: #f8f9fa;
+    --background-color-secondary: #eeeefe;
+    --text-color: #343a40;
+    --primary-color: #ff6b6b;
+    --primary-hover-color: #ff4757;
+    --secondary-color: #4ecdc4;
+    --secondary-hover-color: #3ba99f;
+}
+
+[data-theme="nature"] {
+    /* Natur-Thema */
+    --background-color-primary: #e9f5db;
+    --background-color-secondary: #e0f0d0;
+    --text-color: #2c3e50;
+    --primary-color: #27ae60;
+    --primary-hover-color: #219653;
+    --secondary-color: #8e44ad;
+    --secondary-hover-color: #7d3c98;
+}
+
+[data-theme="ocean"] {
+    /* Ozean-Thema */
+    --background-color-primary: #e0f7fa;
+    --background-color-secondary: #fef0f0;
+    --text-color: #00695c;
+    --primary-color: #00bcd4;
+    --primary-hover-color: #0097a7;
+    --secondary-color: #ff5722;
+    --secondary-hover-color: #e64a19;
+}
+
+[data-theme="sunset"] {
+    /* Sonnenuntergang-Thema */
+    --background-color-primary: #fff3e0;
+    --background-color-secondary: #fefef0;
+    --text-color: #bf360c;
+    --primary-color: #ff9800;
+    --primary-hover-color: #f57c00;
+    --secondary-color: #e91e63;
+    --secondary-hover-color: #c2185b;
+}
+
+[data-theme="forest"] {
+    /* Wald-Thema */
+    --background-color-primary: #e8f5e9;
+    --background-color-secondary: #e0f8e5;
+    --text-color: #1b5e20;
+    --primary-color: #4caf50;
+    --primary-hover-color: #388e3c;
+    --secondary-color: #795548;
+    --secondary-hover-color: #5d4037;
+}
+
+[data-theme="night"] {
+    /* Nacht-Thema */
+    --background-color-primary: #0d47a1;
+    --background-color-secondary: #005acc;
+    --text-color: #ffffff;
+    --primary-color: #bbdefb;
+    --primary-hover-color: #90caf9;
+    --secondary-color: #ffcc80;
+    --secondary-hover-color: #ffb74d;
+}
+
+[data-theme="vintage"] {
+    /* Vintage-Thema */
+    --background-color-primary: #f5f5dc;
+    --background-color-secondary: #f3f3ce;
+    --text-color: #8b4513;
+    --primary-color: #d2b48c;
+    --primary-hover-color: #a0522d;
+    --secondary-color: #cd853f;
+    --secondary-hover-color: #a0522d;
+}
+
+[data-theme="modern"] {
+    /* Modernes Thema */
+    --background-color-primary: #f0f0f0;
+    --background-color-secondary: #dedede;
+    --text-color: #333333;
+    --primary-color: #607d8b;
+    --primary-hover-color: #455a64;
+    --secondary-color: #9e9e9e;
+    --secondary-hover-color: #757575;
+}
+
+[data-theme="pastel"] {
+    /* Pastell-Thema */
+    --background-color-primary: #fce4ec;
+    --background-color-secondary: #ffdeec;
+    --text-color: #880e4f;
+    --primary-color: #f48fb1;
+    --primary-hover-color: #ec407a;
+    --secondary-color: #ce93d8;
+    --secondary-hover-color: #ab47bc;
+}

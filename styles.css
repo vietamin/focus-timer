@@ -5,9 +5,14 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+footer {
+  text-align: center;
+  font-size: 0.8em;
 }
 
 .container {
