@@ -83,7 +83,7 @@ function notifyUser() {
   // Toastify-Benachrichtigung anzeigen
   Toastify({
     text: isWorkTime ? 'Pausenzeit! Zeit für eine Pause!' : 'Arbeitszeit! Zurück an die Arbeit!',
-    duration: 3000,
+    duration: 5000,
     gravity: 'top',
     position: 'center',
     background: isWorkTime ? '#28a745' : '#dc3545',
