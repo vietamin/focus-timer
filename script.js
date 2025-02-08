@@ -86,7 +86,7 @@ function notifyUser() {
     duration: 3000,
     gravity: 'top',
     position: 'center',
-    style.background: isWorkTime ? '#28a745' : '#dc3545',
+    background: isWorkTime ? '#28a745' : '#dc3545',
   }).showToast();
 
   // Vibration API verwenden (falls unterstützt)
