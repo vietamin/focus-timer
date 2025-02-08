@@ -73,10 +73,25 @@ function switchMode() {
 
 // Benachrichtigung anzeigen
 function notifyUser() {
+  // Zeige die Desktop Benachrichtigung
   if (Notification.permission === 'granted') {
     new Notification(isWorkTime ? 'Break Time!' : 'Work Time!', {
       body: isWorkTime ? 'Time for a break!' : 'Back to Work! :)',
     });
+  }
+
+  // Toastify-Benachrichtigung anzeigen
+  Toastify({
+    text: isWorkTime ? 'Pausenzeit! Zeit für eine Pause!' : 'Arbeitszeit! Zurück an die Arbeit!',
+    duration: 3000,
+    gravity: 'top',
+    position: 'center',
+    backgroundColor: isWorkTime ? '#28a745' : '#dc3545',
+  }).showToast();
+
+  // Vibration API verwenden (falls unterstützt)
+  if (navigator.vibrate) {
+    navigator.vibrate([200, 100, 200]); // Vibrationsmuster: 200ms an, 100ms aus, 200ms an
   }
 }
 
