@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FocusTimer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
     <header>
-      <audio id="start" src="start.wav"></audio>
-      <audio id="break" src="break.wav"></audio>
+      <audio id="start-audio" src="start.mp3"></audio>
+      <audio id="break-audio" src="break.mp3"></audio>
     </header>
     <main>
       <div class="container">
@@ -18,9 +19,9 @@
           <span id="minutes">25</span>:<span id="seconds">00</span>
         </div>
         <div class="controls">
-          <button id="start">Start</button>
-          <button id="pause">Pause</button>
-          <button id="reset">Reset</button>
+          <button id="start-button">Start</button>
+          <button id="pause-button">Pause</button>
+          <button id="reset-button">Reset</button>
         </div>
         <div class="settings">
           <label for="work-duration">Work Duration (Minutes):</label>
@@ -32,7 +33,8 @@
     </main>
     <footer>
       <script src="script.js"></script>
-      <a href="https://freesound.org/people/ACPascal/sounds/195912/">Start</a> and <a href="https://freesound.org/people/ACPascal/sounds/320785/">Break</a> Sounds by <a href="https://freesound.org/people/ACPascal/">ACPascal</a> | License: <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0</a>
+      <span><a href="https://freesound.org/people/FoolBoyMedia/sounds/352654/">Piano Notification 5b</a> by <a href="https://freesound.org/people/FoolBoyMedia/">FoolBoyMedia</a> | License: <a href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution NonCommercial 4.0</a></span>
+      <span><a href="https://freesound.org/people/FoolBoyMedia/sounds/352653/">Piano Notification 1</a> by <a href="https://freesound.org/people/FoolBoyMedia/">FoolBoyMedia</a> | License: <a href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution NonCommercial 4.0</a></span>
     </footer>
   </body>
 </html>

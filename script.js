@@ -5,11 +5,17 @@ let timeLeft = 25 * 60; // Standard: 25 Minuten Arbeitszeit
 
 const minutesDisplay = document.getElementById('minutes');
 const secondsDisplay = document.getElementById('seconds');
-const startButton = document.getElementById('start');
-const pauseButton = document.getElementById('pause');
-const resetButton = document.getElementById('reset');
+const startButton = document.getElementById('start-button');
+const pauseButton = document.getElementById('pause-button');
+const resetButton = document.getElementById('reset-button');
 const workDurationInput = document.getElementById('work-duration');
 const breakDurationInput = document.getElementById('break-duration');
+const startAudio = document.getElementById('start-audio');
+const breakAudio = document.getElementById('break-audio');
+
+window.addEventListener("load", function(){ // is being triggered when the page is *fully-loaded*
+    resetTimer();
+});
 
 // Timer aktualisieren
 function updateTimerDisplay() {
@@ -30,6 +36,11 @@ function startTimer() {
       if (timeLeft <= 0) {
         clearInterval(timer);
         isRunning = false;
+        if (isWorkTime === true) {
+          breakAudio.play();
+        } else {
+          startAudio.play();
+        }
         notifyUser();
         switchMode();
       }

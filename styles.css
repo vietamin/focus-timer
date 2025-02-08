@@ -10,7 +10,14 @@ body {
   align-items: center;
   height: 100vh;
 }
+
+main {
+  padding: 0.8em;
+}
+
 footer {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   font-size: 0.8em;
 }
