@@ -5,6 +5,7 @@ let timeLeft = 25 * 60; // Standard: 25 Minuten Arbeitszeit
 
 const minutesDisplay = document.getElementById('minutes');
 const secondsDisplay = document.getElementById('seconds');
+const stateIndicator = document.getElementById('state-indicator');
 const startButton = document.getElementById('start-button');
 const pauseButton = document.getElementById('pause-button');
 const resetButton = document.getElementById('reset-button');
@@ -25,10 +26,16 @@ function updateTimerDisplay() {
   secondsDisplay.textContent = String(seconds).padStart(2, '0');
 }
 
+function updateStateIndicator() {
+  stateIndicator.textContent = isWorkTime ? 'Work' : 'Relax';
+}
+
 // Timer starten
 function startTimer() {
+  stateIndicator.classList.toggle("transformed-state");
   if (!isRunning) {
     isRunning = true;
+    updateStateIndicator();
     timer = setInterval(() => {
       timeLeft--;
       updateTimerDisplay();
@@ -36,7 +43,7 @@ function startTimer() {
       if (timeLeft <= 0) {
         clearInterval(timer);
         isRunning = false;
-        if (isWorkTime === true) {
+        if (isWorkTime) {
           breakAudio.play();
         } else {
           startAudio.play();
@@ -60,6 +67,7 @@ function resetTimer() {
   isRunning = false;
   isWorkTime = true;
   timeLeft = workDurationInput.value * 60;
+  stateIndicator.textContent = '';
   updateTimerDisplay();
 }
 
