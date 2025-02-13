@@ -98,12 +98,27 @@ h1 {
   transition-duration: 0.5s;
 }
 
-.transformed-state {
+#state-indicator.transformed-state-work {
   background-color: green;
   color: yellow;
-  font-size: 12px;
   transition-property: background-color, font-size, transform, color;
-  transform: rotate(270deg);
+  /* transform: rotate(270deg); */
+  transition-timing-function: ease-in-out;
+  transition-duration: 2s;
+}
+
+#state-indicator.transformed-state-relax {
+  background-color: orange;
+  color: white;
+  transition-property: background-color, font-size, transform, color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 2s;
+}
+
+#state-indicator.transformed-state-none {
+  background-color: #007bff;
+  color: white;
+  transition-property: background-color, font-size, transform, color;
   transition-timing-function: ease-in-out;
   transition-duration: 2s;
 }

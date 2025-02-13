@@ -27,12 +27,20 @@ function updateTimerDisplay() {
 }
 
 function updateStateIndicator() {
-  stateIndicator.textContent = isWorkTime ? 'Work' : 'Relax';
+  if (isRunning) {
+    if (isWorkTime) {
+      stateIndicator.textContent = "Work";
+      stateIndicator.classList.toggle("transformed-state-work");
+      stateIndicator.classList.toggle("transformed-state-none");
+    } else {
+      stateIndicator.textContent = "Relax";
+      stateIndicator.classList.toggle("transformed-state-relax");
+    }
+  }
 }
 
 // Timer starten
 function startTimer() {
-  stateIndicator.classList.toggle("transformed-state");
   if (!isRunning) {
     isRunning = true;
     updateStateIndicator();
@@ -68,6 +76,7 @@ function resetTimer() {
   isWorkTime = true;
   timeLeft = workDurationInput.value * 60;
   stateIndicator.textContent = '';
+  stateIndicator.classList.toggle("transformed-state-none");
   updateTimerDisplay();
 }
 
